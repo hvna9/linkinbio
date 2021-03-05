@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Claudio S. Di Mauro</title>
+
+        <!-- FAVICON DEFINITION  -->
+        <link rel="shortcut icon" href="img/avatar.jpg" />
+
+        <!-- CSS REFERENCE  -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style-btn.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!-- CACHE CONTROL -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" /> 
+
+        <!-- MOBILE DISPLAY  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    </head>
+    <body>
+        <!-- TOGGLE -->
+        <div>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <div class="ball"></div>
+            </label>
+        </div>
+
+        <!-- AVATAR -->
+        <center>
+            <img class="avatar" src="img/avatar.jpg">
+        </center>
+
+        <!-- SOCIAL ICONS -->
+
+        <center class="social">
+            <a href="https://www.facebook.com/claudio.dimauro02/" target="_blank">
+                <img src="img/social/facebook.png" alt="facebook">
+            </a>
+
+            <a href="https://www.instagram.com/_havana9/" target="_blank">
+                <img src="img/social/instagram.png" alt="instagram">
+            </a>
+
+            <a href="https://www.linkedin.com/in/claudiodimauro/" target="_blank">
+                <img src="img/social/linkedin.png" alt="linkedin">
+            </a>
+        </center>
+
+        <!-- MAIL TEXT -->
+        <center class="mail animate__animated animate__fadeIn">
+            <a href="mailto:mail@claudiodimauro.it">mail@claudiodimauro.it</a>
+        </center>
+
+        <!-- BUTTONS -->
+        <center class="color">
+            <div class="animate__animated animate__backInLeft animate__delay-2s">
+                <div class="green "><a class='linkinbio' href="https://www.claudiodimauro.it" target="_blank">Web Site</a></div>
+            </div>
+
+            <div class="animate__animated animate__backInRight animate__delay-2s">
+                <div class="orange "><a class='linkinbio' href="https://github.com/csdm" target="_blank">GitHub</a></div>
+            </div>
+
+            <div class="animate__animated animate__backInLeft animate__delay-2s">
+                <div class="blue"><a class='linkinbio' href="https://www.behance.net/_havana9/" target="_blank">Behance</a></div>
+            </div>
+
+            <div class="animate__animated animate__backInRight animate__delay-2s">
+                <div class="red"><a class='linkinbio' href="https://www.youtube.com/channel/UCu5IbjF-vlxIg5vA2kl0p4g" target="_blank">YouTube</a></div>
+            </div>
+
+
+
+
+        </center>
+    </body>
+    <script>
+        const checkbox = document.getElementById('checkbox');
+        checkbox.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+        })
+    </script>
+</html>
