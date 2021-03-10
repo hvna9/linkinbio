@@ -81,13 +81,15 @@ body.dark-mode .mail a {
 
 .avatar {
     width: 150px;
+    animation: pulse 1.2s infinite alternate;
+    animation-delay: calc(1.2s / 4);
 }
 
-.avatar:hover {
+/* .avatar:hover {
     transform: scale(1.2, 1.2);
     transition: 0.3s;    
     z-index: 9;
-}
+}  */
 
 .social {
     display: inherit;
@@ -140,6 +142,15 @@ body.dark-mode .mail a {
  * animations section - keyframes
  * ----------------------------------------
  */
+
+ @keyframes pulse {
+     0% {
+         transform: scale(1);
+     }
+     100% {
+         transform: scale(1.2);
+     }
+ }
 
 @keyframes flip-scale-down-diag-2 {
   0% {
